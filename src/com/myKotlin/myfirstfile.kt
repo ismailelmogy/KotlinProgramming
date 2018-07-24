@@ -2,41 +2,21 @@
 
 package com.myKotlin
 
-import com.myjava.MyJavaFile
 
 fun main(args: Array<String>) {
 
- var area = MyJavaFile.getArea(10,9)
-    println(" printing area from kotlin file : $area ")
+  var result = findVolume(2 , 3)
+    print(result)
 
 }
 
-fun add ( a :Int , b :Int) : Int{
+@JvmOverloads
+fun findVolume(length : Int , breadth : Int , height : Int = 10) : Int{
 
-    return a + b
+    return  length * breadth * height
+
 }
 
- /*
- * pubic class MyCustomKotlinFileName {
- *
- *
- *   public static void com.myKotlin.main(String [] args ) {
- *
- *
- *         }
- *
- *    public static Int com.myKotlin.add (int a ,int b){
- *
- *    }
- *
- *
- * }
- *
- *
- *
- *
- *
- * */
 
 
 
